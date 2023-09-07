@@ -81,4 +81,6 @@ switch(num) {
     case 7:
         alert('Воскресенье')
         break
+    default:
+        console.error("ERROR");
 }
