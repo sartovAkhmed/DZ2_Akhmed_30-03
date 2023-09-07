@@ -28,14 +28,14 @@ var starbucks = {
 var beverage = prompt('coffe or tea?: ')
 var nameBeverage = prompt('What exactly?: ')
 // Переменные для функционала
-var keys = Object.keys(starbucks)
+var starbucksKeys = Object.keys(starbucks)
 var coffeKeys = Object.keys(starbucks.coffe)
 var teaKeys = Object.keys(starbucks.tea)
 
-if (keys.includes(beverage) && coffeKeys.includes(nameBeverage)) {
+if (starbucksKeys.includes(beverage) && coffeKeys.includes(nameBeverage)) {
     console.log('Ваш заказ принят!');
     alert('Ваш заказ принят!')
-}else if (keys.includes(beverage) && teaKeys.includes(nameBeverage)) {
+}else if (starbucksKeys.includes(beverage) && teaKeys.includes(nameBeverage)) {
     console.log('Ваш заказ принят!');
     alert('Ваш заказ принят!')
 }else {
